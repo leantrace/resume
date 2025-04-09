@@ -1,0 +1,38 @@
+// app/resumes/[resume-id]/themes/[theme-id]/page.tsx
+import { Download } from '@/components/Download'
+import { SchaltstelleTheme } from '@/components/themes/SchaltstelleTheme'
+import fs from 'fs'
+import path from 'path'
+
+const getResume = async (resumeId: string) => {
+  try {
+    const filePath = path.join(process.cwd(), 'public', 'resumes', `${resumeId}.json`)
+    const fileContent = fs.readFileSync(filePath, 'utf-8')
+    return JSON.parse(fileContent)
+  } catch (error) {
+    console.error(`💥 Failed to load resume: ${resumeId}`, error)
+    return null
+  }
+}
+
+const ThemePage = async (props: { params: Promise<{ resumeid: string; themeid: string }> }) => {
+  const { resumeid, themeid } = await props.params
+  const resume = await getResume(resumeid)
+
+  if (!resume) {
+    return <div className="font-bold text-red-600">Error: Could not load resume data.</div>
+  }
+
+  if (themeid === 'schaltstelle') {
+    return (
+      <div>
+        <Download />
+        <SchaltstelleTheme resume={resume} resumeId={resumeid} />
+      </div>
+    )
+  }
+
+  return <div>Theme not found</div>
+}
+
+export default ThemePage
