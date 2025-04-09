@@ -18,7 +18,7 @@ export const SchaltstelleTheme: React.FC<Props> = ({ resume, resumeId }) => {
         <div className="w-full flex-grow">
           <div className="relative mb-6 flex gap-6 pb-4 after:absolute after:bottom-0 after:left-0 after:h-1 after:w-2/5 after:bg-[#d52626]">
             <div>
-              <Image src={`/resumes/${resumeId}.png`} alt="Profile" width={140} height={140} />
+              <Image src={`${basePath}/resumes/${resumeId}.png`} alt="Profile" width={140} height={140} />
             </div>
             <div>
               <div className="text-3xl font-bold">{basics?.name}</div>
@@ -61,7 +61,7 @@ export const SchaltstelleTheme: React.FC<Props> = ({ resume, resumeId }) => {
         </div>
         <aside className="w-[180px] flex-shrink-0">
           <div className="mb-6">
-            <Image src={'/brands/schaltstelle/banner.png'} alt="Schaltstelle Logo" width={200} height={80} className="mb-3" />
+            <Image src={`${basePath}/brands/schaltstelle/banner.png`} alt="Schaltstelle Logo" width={200} height={80} className="mb-3" />
             <address className="text-xs text-gray-700 not-italic">
               <div>Bereitenreinstr. 40</div>
               <div>3040 Bern</div>
