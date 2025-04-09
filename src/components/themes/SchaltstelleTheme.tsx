@@ -9,7 +9,7 @@ type Props = {
   resumeId: string
 }
 
-const basePath = '/siwi'
+const basePath = '/resume'
 
 export const SchaltstelleTheme: React.FC<Props> = ({ resume, resumeId }) => {
   const { basics, work, education, languages, projects, certificates, skills } = resume
