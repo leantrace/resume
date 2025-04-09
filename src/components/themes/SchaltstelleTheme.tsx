@@ -1,3 +1,4 @@
+import { basePath } from '@/lib/basepath'
 import { ResumeSchemaType } from '@/types/resume'
 import { calculateAge, formatJobFromTo } from '@/utils'
 import Image from 'next/image'
