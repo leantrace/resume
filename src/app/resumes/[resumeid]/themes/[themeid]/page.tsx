@@ -1,8 +1,11 @@
-// app/resumes/[resume-id]/themes/[theme-id]/page.tsx
 import { Download } from '@/components/Download'
 import { SchaltstelleTheme } from '@/components/themes/SchaltstelleTheme'
 import fs from 'fs'
 import path from 'path'
+
+export async function generateStaticParams() {
+  return [{ resumeid: 'alex', themeid: 'schaltstelle' }]
+}
 
 const getResume = async (resumeId: string) => {
   try {
