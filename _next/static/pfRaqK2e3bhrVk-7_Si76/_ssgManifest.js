@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fresumes\u002F[resumeid]\u002Fthemes\u002F[themeid]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

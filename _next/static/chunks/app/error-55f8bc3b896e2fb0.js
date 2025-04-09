@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[39],{1901:(e,r,s)=>{"use strict";s.r(r),s.d(r,{default:()=>t});var n=s(5155);function t(){return(0,n.jsx)("div",{className:"flex min-h-screen w-full flex-col items-center justify-center gap-4 text-center",children:(0,n.jsx)("span",{children:"error"})})}},6802:(e,r,s)=>{Promise.resolve().then(s.bind(s,1901))}},e=>{var r=r=>e(e.s=r);e.O(0,[441,684,358],()=>r(6802)),_N_E=e.O()}]);
+//# sourceMappingURL=error-55f8bc3b896e2fb0.js.map
