@@ -328,6 +328,15 @@
       ]
     },
     {
+      "name": "",
+      "level": "Produktentwicklung",
+      "keywords": [
+        "Lean Startup", "MVP", "Lean Canvas",
+        "Continuous Integration", "Continuous Delivery",
+        "Continuous Testing", "Agile Produktentwicklung"
+      ]
+    },
+    {
       "name": "Soft Skills",
       "level": "Teamleitung, Kommunikation",
       "keywords": [
@@ -347,15 +356,6 @@
       "level": "Mindfulness, Meditation & Yoga ",
       "keywords": [
         "Zertifizierter Yoga Instruktor: nutze deine Ruhe, Focus, Geduld und  Positivität in der Softwareentwicklung."
-      ]
-    },
-    {
-      "name": "",
-      "level": "Produktentwicklung",
-      "keywords": [
-        "Lean Startup", "MVP", "Lean Canvas",
-        "Continuous Integration", "Continuous Delivery",
-        "Continuous Testing", "Agile Produktentwicklung"
       ]
     }
   ],
