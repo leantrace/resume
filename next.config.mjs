@@ -7,7 +7,7 @@ EventEmitter.defaultMaxListeners = 20 // default 10
 const nextConfig = {
   productionBrowserSourceMaps: true,
   output: 'export',
-  basePath: '/siwi', // important if your repo isn't on root
+  basePath: '/siwi',
   logging: {
     fetches: {
       fullUrl: true,
