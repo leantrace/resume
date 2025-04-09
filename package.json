@@ -1,10 +1,13 @@
 {
   "name": "siwi",
+  "homepage": "https://leantrace.github.io/resume",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS='--enable-source-maps --inspect' next dev",
     "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d out",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
